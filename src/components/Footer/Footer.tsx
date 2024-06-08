@@ -1,5 +1,5 @@
 import styles from './Footer.module.sass';
-import logo from '../../assets/footerLogo.png';
+import logo from '../../assets/images/footerLogo.png';
 import Container from '../Container/Container';
 
 const Footer = () => {

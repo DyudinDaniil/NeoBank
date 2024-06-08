@@ -1,14 +1,15 @@
 import './Home.sass';
 
+import Choose from '../../components/HomePage/Choose/Choose';
+import Features from '../../components/HomePage/Features/Features';
+
 const Home = () => {
 
   return (
     <>
-      <section>
+      <Choose />
 
-      </section>
-
-      <section></section>
+      <Features />
 
       <section></section>
 
