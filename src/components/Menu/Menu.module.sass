@@ -1,0 +1,38 @@
+.menu
+  display: none
+  position: fixed
+  width: 100vw
+  height: 100vh
+  top: 63px
+  right: 0
+  transform: translateX(100%)
+  transition-duration: .6s
+  &__blur
+    width: 100vw
+    height: 100vh
+    backdrop-filter: blur(2px)
+    position: absolute
+  &__list
+    
+    padding-top: 20px
+    padding-left: 20px
+    position: absolute
+    display: flex
+    flex-direction: column
+    gap: 12px
+    width: 200px
+    height: 100%
+    background-color: #F5F4FF
+    right: 0
+  &__link
+    font-size: 16px
+    color: #1D1929
+    font-weight: 700
+    line-height: 17.92px
+    letter-spacing: 0.02em
+.active
+  transform: translateX(0)
+
+@media (max-width: 920px)
+  .menu
+    display: block

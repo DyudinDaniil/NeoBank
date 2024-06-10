@@ -1,7 +1,11 @@
+import { useState } from 'react';
 import Container from '../Container/Container';
+import Menu from '../Menu/Menu';
 import styles from './Navbar.module.sass';
 
 const Navbar = () => {
+
+  const [menuActive, setMenuActive] = useState<boolean>(false);
 
   return (
     <nav className={styles.nav}>
@@ -40,7 +44,13 @@ const Navbar = () => {
           </ul>
 
           <button className={styles.nav__button}>Online Bank</button>
+
+          <div className={styles.nav__burger} onClick={() => setMenuActive(!menuActive)}>
+            <span />
+          </div>
         </div>
+
+        <Menu menuActive={menuActive} />
       </Container>
     </nav>
   )
